@@ -1,0 +1,251 @@
+baseURL = 'https://thoni-miguel.github.io/'
+languageCode = 'en-us'
+title = 'Thoni Araujo - Python Developer & Automation Specialist'
+theme = 'hugo-profile'
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+page = [ "HTML", "RSS" ]
+
+enableRobotsTXT = true
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+title = "Thoni Araujo - Python Developer & Automation Specialist"
+description = "Full-stack developer specializing in Python automation, web scraping, and backend solutions. Available for freelance projects on Upwork and Fiverr."
+favicon = "/images/favicon_io/favicon-dark.ico"
+
+# Whether to serve bootstrap css and js files from CDN or not
+useBootstrapCDN = false
+
+# Whether the fade animations on the home page will be enabled
+animate = true
+
+[params.theme]
+# disableThemeToggle = true
+defaultTheme = "light" # dark
+
+[params.font]
+fontSize = "1rem" # default: 1rem
+fontWeight = 400 # default: 400
+lineHeight = 1.5 # default: 1.5
+textAlign = "left" # default: left
+
+# Navbar configuration
+[params.navbar]
+align = "ms-auto" # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+brandName = "Thoni Araujo" # Brand name for the brand | default is the title variable
+disableSearch = true
+[params.navbar.stickyNavBar]
+enable = true
+showOnScrollUp = true
+enableSeparator = false
+
+[params.navbar.menus]
+disableAbout = false
+disableExperience = false
+disableEducation = true
+disableProjects = false
+disableAchievements = true
+disableContact = false
+
+# Hero Section - Clear, focused, and purpose-driven
+[params.hero]
+enable = true
+intro = "Hi, I'm"
+title = "Thoni Araujo"
+subtitle = "Python Developer & Automation Specialist"
+content = """
+I help businesses **automate their workflows** and **extract valuable data** through custom Python solutions. 
+From web scraping frameworks to decision-support tools, I build reliable systems that eliminate repetitive tasks.
+
+**Currently available for freelance projects** on Upwork and Fiverr.
+"""
+image = "/images/profile-picture-Photoroom.jpg"
+roundImage = false
+[params.hero.bottomImage]
+# enable = true
+# roundImage = false # Make hero image circular | default false
+
+[params.hero.button]
+enable = true
+name = "See My Work"
+url = "#projects"
+download = false
+newPage = false
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-github"
+url = "https://github.com/thoni-miguel"
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-linkedin"
+url = "https://www.linkedin.com/in/thoni-araujo-2a14b6349"
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fas fa-globe"
+url = "https://thoni-miguel.github.io"
+
+# About Section - Personal story and authentic journey
+[params.about]
+enable = true
+title = "About Me"
+# image = "/images/me.png"
+content = """
+I'm a **26-year-old developer from Brazil** who discovered my passion for solving problems through code. 
+What started as curiosity about automation has evolved into a career focused on helping businesses work smarter, not harder.
+
+**My Journey:**
+By day, I work as a backend developer with **Java and Spring Boot** in enterprise environments. 
+By night, I build **Python automation tools** that eliminate tedious tasks and extract valuable insights from data.
+
+**What Drives Me:**
+I believe technology should serve people, not the other way around. That's why I focus on creating **practical, reliable solutions** 
+that make a real difference in how businesses operate. Whether it's automating data collection or streamlining complex workflows, 
+I'm passionate about turning repetitive tasks into elegant, automated systems.
+
+**Currently:** Building my freelance practice while contributing to open-source automation tools. 
+My goal is to help more businesses harness the power of Python automation.
+"""
+
+[params.about.skills]
+enable = true
+title = "What I Work With:"
+items = [
+    "Python (Automation & Web Scraping)",
+    "Java & Spring Boot", 
+    "REST APIs & Backend Development",
+    "Web Scraping (Playwright, BeautifulSoup)",
+    "Database Design (MySQL)",
+    "Git & GitHub Actions",
+    "Docker & Deployment",
+    "Linux/CLI Tools"
+]
+
+# Experience Section - Focused on relevant, recent experience
+[params.experience]
+enable = true
+title = "Professional Experience"
+
+[[params.experience.items]]
+job = "Java Backend Developer"
+company = "EvoluServices"
+companyUrl = "https://br.evoluservices.com/"
+date = "December 2022 - Present"
+content = """
+I work as a Java Backend Developer at EvoluServices, a Brazilian fintech focused on digital payment solutions. 
+My primary responsibility is developing core backend logic for systems that handle high volumes of financial transactions with reliability and precision.
+
+**Key Responsibilities:**
+- Developing backend systems with **Java and Spring Boot** for financial transaction processing
+- Working with **MySQL** databases and maintaining high-performance APIs
+- Contributing to **embedded systems in C++** for point-of-sale (POS) machines
+- Implementing business rules and ensuring system integrity in critical uptime environments
+- Assisting with **JavaScript** tasks and **Python scripts** for automation
+"""
+[params.experience.items.featuredLink]
+enable = true
+name = "View Company Website"
+url = "https://br.evoluservices.com/"
+
+
+[[params.experience.items]]
+job = "Python Automation-Focused Freelancer"
+company = "Upwork"
+companyUrl = "https://www.upwork.com/freelancers/~0136e68c0bf0f5657b?mp_source=share"
+date = "2024 - Present"
+content = """
+Specializing in **Python automation, web scraping, and backend systems** on Upwork. 
+I help businesses streamline their workflows and extract valuable data from the web.
+
+**Core Services:**
+- **Web Scraping**: Using BeautifulSoup and Playwright to extract data from websites
+- **Task Automation**: Custom Python scripts and CLI tools to eliminate repetitive work
+- **API Development**: Building and integrating RESTful APIs with Flask and Spring Boot
+- **Database Solutions**: Working with SQL databases for structured data storage
+"""
+[params.experience.items.featuredLink]
+enable = true
+name = "View Profile"
+url = "https://www.upwork.com/freelancers/~0136e68c0bf0f5657b?mp_source=share"
+
+
+[[params.experience.items]]
+job = "Python Automation-Focused Freelancer"
+company = "Fiverr"
+companyUrl = "https://www.fiverr.com/s/Aykxj3a"
+date = "2024 - Present"
+content = """
+**Python Web Scraping and Data Automation Specialist** on Fiverr, helping businesses collect and organize web data efficiently.
+
+**What I Deliver:**
+- **Clean, structured data** in CSV, Excel, or JSON formats
+- **Accurate web scraping** from any website or online source
+- **Fast turnaround** with attention to detail and data quality
+- **Simple process**: Just tell me what data you need, I handle the technical details
+"""
+[params.experience.items.featuredLink]
+enable = true
+name = "View Gigs"
+url = "https://www.fiverr.com/s/Aykxj3a"
+
+# Featured Projects - Quality over quantity, with clear impact
+[params.projects]
+enable = true
+title = "Featured Projects"
+
+[[params.projects.items]]
+title = "Scraplet - Web Scraping Framework"
+content = "A Python framework I built to make web scraping more reliable and reusable. **The Problem:** Most scraping scripts are one-off solutions that break easily. **My Solution:** A modular framework that handles common scraping challenges like rate limiting, error handling, and data organization. **Impact:** Reduces scraping development time by 60% and creates maintainable, scalable solutions."
+image = "/images/projects/scraplet.png"
+[params.projects.items.featured]
+name = "View on GitHub"
+link = "https://github.com/thoni-miguel/scraplet"
+badges = ["Python", "Web Scraping", "Framework", "Open Source"]
+[[params.projects.items.links]]
+icon = "fab fa-github"
+url = "https://github.com/thoni-miguel/scraplet"
+[[params.projects.items.links]]
+icon = "fas fa-book"
+url = "https://github.com/thoni-miguel/scraplet#readme"
+
+[[params.projects.items]]
+title = "Resolvr - Decision Support Tool"
+content = "A workflow automation tool for complex decision-making processes. **The Problem:** Teams waste time on repetitive decision workflows and lose track of resolution steps. **My Solution:** A CLI tool that guides users through structured decision trees with automated documentation. **Tech Focus:** Built with Python, emphasizing clean architecture and user experience."
+image = "/images/projects/resolvr.png"
+[params.projects.items.featured]
+name = "View Source"
+link = "https://github.com/thoni-miguel/resolvr"
+badges = ["Python", "CLI Tool", "Workflow Automation", "In Progress"]
+[[params.projects.items.links]]
+icon = "fab fa-github"
+url = "https://github.com/thoni-miguel/resolvr"
+
+[[params.projects.items]]
+title = "Professional Portfolio"
+content = "This very site! Built with Hugo and designed to showcase my work professionally. **The Challenge:** Creating a clean, fast-loading portfolio that works perfectly on all devices. **My Approach:** Static site generation with Hugo, deployed on GitHub Pages for reliability and speed. **Result:** A portfolio that loads in under 2 seconds and converts visitors to clients."
+image = "/images/projects/portfolio.png"
+[params.projects.items.featured]
+name = "Live Site"
+link = "https://thoni-miguel.github.io"
+badges = ["Hugo", "Static Site", "Responsive Design", "GitHub Pages"]
+[[params.projects.items.links]]
+icon = "fas fa-external-link-alt"
+url = "https://thoni-miguel.github.io"
+[[params.projects.items.links]]
+icon = "fab fa-github"
+url = "https://github.com/thoni-miguel/thoni-miguel.github.io"
+
+# Contact Section - Clear call-to-action focused on freelance goals
+[params.contact]
+enable = true
+content = "Ready to automate your business processes? I help companies save time and reduce errors through custom Python solutions. Whether you need web scraping, data automation, or workflow optimization, let's discuss how I can help your business work smarter."
+btnName = "Start a Project"
+btnLink = "mailto:thoni.araujo.dev@gmail.com"
+
+[params.footer]
+[params.footer.socialNetworks]
+github = "https://github.com/thoni-miguel"
+linkedin = "https://www.linkedin.com/in/thoni-araujo-2a14b6349"
