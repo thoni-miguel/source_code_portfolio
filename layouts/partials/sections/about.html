@@ -1,0 +1,275 @@
+{{ if .Site.Params.about.enable | default false }}
+<section id="about" class="py-0 py-sm-5">
+    <div class="container bg-transparent">
+        <h3 class="text-center bg-transparent">{{ .Site.Params.about.title }}</h3>
+        <div class="bg-transparent row justify-content-center px-3 py-5">
+            {{ if .Site.Params.about.image }}
+            <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
+                <div class="image d-flex px-5">
+                    <img src="{{ .Site.Params.about.image }}" class="img-thumbnail mx-auto rounded-circle" alt="">
+                </div>
+            </div>
+            {{ end }}
+            <div class="col-sm-12 col-md-12 col-lg-8 content">
+                {{ .Site.Params.about.content | markdownify }}
+
+                {{ if .Site.Params.about.skills.enable }}
+                <h5 class="mt-4 mb-3">What I Work With</h5>
+                
+                <!-- Programming & Development -->
+                <div class="skills-category mb-4">
+                    <h6 class="category-title mb-3">
+                        <i class="fas fa-code category-icon"></i>
+                        Programming & Development
+                    </h6>
+                    <div class="skills-grid row g-3">
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <div class="skill-card bg-light border rounded p-3 text-center h-100 d-flex flex-column align-items-center justify-content-center">
+                                <div class="skill-icon mb-2">
+                                    <img src="/fontawesome-6/svgs/brands/python.svg" alt="Python" class="tech-icon">
+                                </div>
+                                <div class="skill-title">PYTHON</div>
+                                <div class="skill-description">Automating repetitive tasks & turning data into insights</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <div class="skill-card bg-light border rounded p-3 text-center h-100 d-flex flex-column align-items-center justify-content-center">
+                                <div class="skill-icon mb-2">
+                                    <img src="/fontawesome-6/svgs/brands/java.svg" alt="Java" class="tech-icon">
+                                </div>
+                                <div class="skill-title">JAVA</div>
+                                <div class="skill-description">Building robust systems that power your business</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data & Analytics -->
+                <div class="skills-category mb-4">
+                    <h6 class="category-title mb-3">
+                        <i class="fas fa-chart-bar category-icon"></i>
+                        Data & Analytics
+                    </h6>
+                    <div class="skills-grid row g-3">
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <div class="skill-card bg-light border rounded p-3 text-center h-100 d-flex flex-column align-items-center justify-content-center">
+                                <div class="skill-icon mb-2">
+                                    <img src="/fontawesome-6/svgs/solid/globe.svg" alt="Web Data Collection" class="tech-icon">
+                                </div>
+                                <div class="skill-title">WEB DATA COLLECTION</div>
+                                <div class="skill-description">Gathering valuable information from websites automatically</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <div class="skill-card bg-light border rounded p-3 text-center h-100 d-flex flex-column align-items-center justify-content-center">
+                                <div class="skill-icon mb-2">
+                                    <img src="/fontawesome-6/svgs/solid/database.svg" alt="Database Management" class="tech-icon">
+                                </div>
+                                <div class="skill-title">DATABASE MANAGEMENT</div>
+                                <div class="skill-description">Organizing & securing your business information</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & Infrastructure -->
+                <div class="skills-category mb-4">
+                    <h6 class="category-title mb-3">
+                        <i class="fas fa-cloud category-icon"></i>
+                        Cloud & Infrastructure
+                    </h6>
+                    <div class="skills-grid row g-3">
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <div class="skill-card bg-light border rounded p-3 text-center h-100 d-flex flex-column align-items-center justify-content-center">
+                                <div class="skill-icon mb-2">
+                                    <img src="/fontawesome-6/svgs/solid/cloud.svg" alt="Cloud Platforms" class="tech-icon">
+                                </div>
+                                <div class="skill-title">CLOUD PLATFORMS</div>
+                                <div class="skill-description">Delivering solutions that grow with your needs</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Skills Categories */
+.skills-category {
+    margin-bottom: 2rem;
+}
+
+.category-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e9ecef;
+    display: flex;
+    align-items: center;
+}
+
+.category-icon {
+    margin-right: 0.5rem;
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+/* Skill Cards */
+.skills-grid .skill-card {
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    min-height: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-grid .skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border-color: #007bff;
+}
+
+.skills-grid .skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.skills-grid .skill-card:hover::before {
+    opacity: 1;
+}
+
+/* Skill Icons */
+.skill-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech-icon {
+    width: 28px;
+    height: 28px;
+    filter: grayscale(0.3);
+    transition: all 0.3s ease;
+}
+
+.skills-grid .skill-card:hover .tech-icon {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+/* Skill Text */
+.skill-title {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #333;
+    margin-bottom: 4px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.skill-description {
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: #666;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.skills-grid .skill-card:hover .skill-title {
+    color: #007bff;
+}
+
+.skills-grid .skill-card:hover .skill-description {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-grid .skill-card {
+        min-height: 100px;
+    }
+    
+    .skill-title {
+        font-size: 0.75rem;
+    }
+    
+    .skill-description {
+        font-size: 0.65rem;
+    }
+    
+    .tech-icon {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .category-title {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .skills-grid .skill-card {
+        min-height: 90px;
+    }
+    
+    .skill-title {
+        font-size: 0.7rem;
+    }
+    
+    .skill-description {
+        font-size: 0.6rem;
+    }
+    
+    .tech-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .category-title {
+        font-size: 0.95rem;
+    }
+    
+    .category-icon {
+        font-size: 1rem;
+    }
+}
+
+/* Animation for category sections */
+.skills-category {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.skills-category:nth-child(2) { animation-delay: 0.1s; }
+.skills-category:nth-child(3) { animation-delay: 0.2s; }
+.skills-category:nth-child(4) { animation-delay: 0.3s; }
+.skills-category:nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+
+{{ end }}

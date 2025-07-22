@@ -114,14 +114,14 @@ My goal is to help more businesses harness the power of Python automation.
 enable = true
 title = "What I Work With:"
 items = [
-    "Python (Automation & Web Scraping)",
-    "Java & Spring Boot", 
-    "REST APIs & Backend Development",
-    "Web Scraping (Playwright, BeautifulSoup)",
-    "Database Design (MySQL)",
-    "Git & GitHub Actions",
-    "Docker & Deployment",
-    "Linux/CLI Tools"
+    "<strong>Python</strong> - Automation & Web Scraping",
+    "<strong>Java & Spring Boot</strong> - Enterprise Backend Development", 
+    "<strong>REST APIs</strong> - System Integration & Backend Services",
+    "<strong>Playwright & BeautifulSoup</strong> - Advanced Web Data Extraction",
+    "<strong>MySQL</strong> - Database Design & Optimization",
+    "<strong>Git & GitHub Actions</strong> - Version Control & CI/CD",
+    "<strong>Docker</strong> - Containerization & Deployment",
+    "<strong>Linux & CLI</strong> - System Administration & Server Management"
 ]
 
 # Experience Section - Focused on relevant, recent experience
@@ -198,7 +198,7 @@ title = "Featured Projects"
 
 [[params.projects.items]]
 title = "Scraplet - Web Scraping Framework"
-content = "A Python framework I built to make web scraping more reliable and reusable. **The Problem:** Most scraping scripts are one-off solutions that break easily. **My Solution:** A modular framework that handles common scraping challenges like rate limiting, error handling, and data organization. **Impact:** Reduces scraping development time by 60% and creates maintainable, scalable solutions."
+content = "Open-source Python framework that makes web scraping reliable and reusable. Solves the problem of brittle, one-off scraping scripts by providing robust error handling, rate limiting, and organized data output. Built for developers who need scalable scraping solutions."
 image = "/images/projects/scraplet.png"
 [params.projects.items.featured]
 name = "View on GitHub"
@@ -213,7 +213,7 @@ url = "https://github.com/thoni-miguel/scraplet#readme"
 
 [[params.projects.items]]
 title = "Resolvr - Decision Support Tool"
-content = "A workflow automation tool for complex decision-making processes. **The Problem:** Teams waste time on repetitive decision workflows and lose track of resolution steps. **My Solution:** A CLI tool that guides users through structured decision trees with automated documentation. **Tech Focus:** Built with Python, emphasizing clean architecture and user experience."
+content = "Python CLI tool that streamlines complex decision-making workflows. Eliminates confusion and lost context in team decisions by guiding users through structured decision trees with automated documentation. Perfect for teams that need consistent, traceable decision processes."
 image = "/images/projects/resolvr.png"
 [params.projects.items.featured]
 name = "View Source"
@@ -225,7 +225,7 @@ url = "https://github.com/thoni-miguel/resolvr"
 
 [[params.projects.items]]
 title = "Professional Portfolio"
-content = "This very site! Built with Hugo and designed to showcase my work professionally. **The Challenge:** Creating a clean, fast-loading portfolio that works perfectly on all devices. **My Approach:** Static site generation with Hugo, deployed on GitHub Pages for reliability and speed. **Result:** A portfolio that loads in under 2 seconds and converts visitors to clients."
+content = "Fast-loading, responsive portfolio site built with Hugo static site generator. Designed to showcase work professionally while maintaining sub-2-second load times. Deployed on GitHub Pages for reliability and global CDN performance."
 image = "/images/projects/portfolio.png"
 [params.projects.items.featured]
 name = "Live Site"
@@ -243,7 +243,7 @@ url = "https://github.com/thoni-miguel/thoni-miguel.github.io"
 enable = true
 content = "Ready to automate your business processes? I help companies save time and reduce errors through custom Python solutions. Whether you need web scraping, data automation, or workflow optimization, let's discuss how I can help your business work smarter."
 btnName = "Start a Project"
-btnLink = "mailto:thoni.araujo.dev@gmail.com"
+btnLink = "mailto:thonimigueldev@gmail.com"
 
 [params.footer]
 [params.footer.socialNetworks]

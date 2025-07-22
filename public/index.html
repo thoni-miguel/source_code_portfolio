@@ -633,31 +633,265 @@ My goal is to help more businesses harness the power of Python automation.</p>
 
 
                 
-                What I Work With:
-                <ul>
-                    
-                    <li>Python (Automation &amp; Web Scraping)</li>
-                    
-                    <li>Java &amp; Spring Boot</li>
-                    
-                    <li>REST APIs &amp; Backend Development</li>
-                    
-                    <li>Web Scraping (Playwright, BeautifulSoup)</li>
-                    
-                    <li>Database Design (MySQL)</li>
-                    
-                    <li>Git &amp; GitHub Actions</li>
-                    
-                    <li>Docker &amp; Deployment</li>
-                    
-                    <li>Linux/CLI Tools</li>
-                    
-                </ul>
+                <h5 class="mt-4 mb-3">What I Work With</h5>
+                
+                
+                <div class="skills-category mb-4">
+                    <h6 class="category-title mb-3">
+                        <i class="fas fa-code category-icon"></i>
+                        Programming & Development
+                    </h6>
+                    <div class="skills-grid row g-3">
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <div class="skill-card bg-light border rounded p-3 text-center h-100 d-flex flex-column align-items-center justify-content-center">
+                                <div class="skill-icon mb-2">
+                                    <img src="/fontawesome-6/svgs/brands/python.svg" alt="Python" class="tech-icon">
+                                </div>
+                                <div class="skill-title">PYTHON</div>
+                                <div class="skill-description">Automating repetitive tasks & turning data into insights</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <div class="skill-card bg-light border rounded p-3 text-center h-100 d-flex flex-column align-items-center justify-content-center">
+                                <div class="skill-icon mb-2">
+                                    <img src="/fontawesome-6/svgs/brands/java.svg" alt="Java" class="tech-icon">
+                                </div>
+                                <div class="skill-title">JAVA</div>
+                                <div class="skill-description">Building robust systems that power your business</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="skills-category mb-4">
+                    <h6 class="category-title mb-3">
+                        <i class="fas fa-chart-bar category-icon"></i>
+                        Data & Analytics
+                    </h6>
+                    <div class="skills-grid row g-3">
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <div class="skill-card bg-light border rounded p-3 text-center h-100 d-flex flex-column align-items-center justify-content-center">
+                                <div class="skill-icon mb-2">
+                                    <img src="/fontawesome-6/svgs/solid/globe.svg" alt="Web Data Collection" class="tech-icon">
+                                </div>
+                                <div class="skill-title">WEB DATA COLLECTION</div>
+                                <div class="skill-description">Gathering valuable information from websites automatically</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <div class="skill-card bg-light border rounded p-3 text-center h-100 d-flex flex-column align-items-center justify-content-center">
+                                <div class="skill-icon mb-2">
+                                    <img src="/fontawesome-6/svgs/solid/database.svg" alt="Database Management" class="tech-icon">
+                                </div>
+                                <div class="skill-title">DATABASE MANAGEMENT</div>
+                                <div class="skill-description">Organizing & securing your business information</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="skills-category mb-4">
+                    <h6 class="category-title mb-3">
+                        <i class="fas fa-cloud category-icon"></i>
+                        Cloud & Infrastructure
+                    </h6>
+                    <div class="skills-grid row g-3">
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <div class="skill-card bg-light border rounded p-3 text-center h-100 d-flex flex-column align-items-center justify-content-center">
+                                <div class="skill-icon mb-2">
+                                    <img src="/fontawesome-6/svgs/solid/cloud.svg" alt="Cloud Platforms" class="tech-icon">
+                                </div>
+                                <div class="skill-title">CLOUD PLATFORMS</div>
+                                <div class="skill-description">Delivering solutions that grow with your needs</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
             </div>
         </div>
     </div>
 </section>
+
+<style>
+ 
+.skills-category {
+    margin-bottom: 2rem;
+}
+
+.category-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e9ecef;
+    display: flex;
+    align-items: center;
+}
+
+.category-icon {
+    margin-right: 0.5rem;
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+ 
+.skills-grid .skill-card {
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    min-height: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-grid .skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border-color: #007bff;
+}
+
+.skills-grid .skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.skills-grid .skill-card:hover::before {
+    opacity: 1;
+}
+
+ 
+.skill-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech-icon {
+    width: 28px;
+    height: 28px;
+    filter: grayscale(0.3);
+    transition: all 0.3s ease;
+}
+
+.skills-grid .skill-card:hover .tech-icon {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+ 
+.skill-title {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #333;
+    margin-bottom: 4px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.skill-description {
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: #666;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.skills-grid .skill-card:hover .skill-title {
+    color: #007bff;
+}
+
+.skills-grid .skill-card:hover .skill-description {
+    color: #0056b3;
+}
+
+ 
+@media (max-width: 768px) {
+    .skills-grid .skill-card {
+        min-height: 100px;
+    }
+    
+    .skill-title {
+        font-size: 0.75rem;
+    }
+    
+    .skill-description {
+        font-size: 0.65rem;
+    }
+    
+    .tech-icon {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .category-title {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .skills-grid .skill-card {
+        min-height: 90px;
+    }
+    
+    .skill-title {
+        font-size: 0.7rem;
+    }
+    
+    .skill-description {
+        font-size: 0.6rem;
+    }
+    
+    .tech-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .category-title {
+        font-size: 0.95rem;
+    }
+    
+    .category-icon {
+        font-size: 1rem;
+    }
+}
+
+ 
+.skills-category {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.skills-category:nth-child(2) { animation-delay: 0.1s; }
+.skills-category:nth-child(3) { animation-delay: 0.2s; }
+.skills-category:nth-child(4) { animation-delay: 0.3s; }
+.skills-category:nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+
+
 
 <section id="experience" class="py-5">
     <div class="container">
@@ -896,7 +1130,7 @@ I help businesses streamline their workflows and extract valuable data from the 
                         </div>
                         <h5 class="card-title bg-transparent mt-1">Scraplet - Web Scraping Framework</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            A Python framework I built to make web scraping more reliable and reusable. **The Problem:** Most scraping scripts are one-off solutions that break easily. **My Solution:** A modular framework that handles common scraping challenges like rate limiting, error handling, and data organization. **Impact:** Reduces scraping development time by 60% and creates maintainable, scalable solutions.
+                            Open-source Python framework that makes web scraping reliable and reusable. Solves the problem of brittle, one-off scraping scripts by providing robust error handling, rate limiting, and organized data output. Built for developers who need scalable scraping solutions.
                         </div>
                     </div>
                     
@@ -937,7 +1171,7 @@ I help businesses streamline their workflows and extract valuable data from the 
                         </div>
                         <h5 class="card-title bg-transparent mt-1">Resolvr - Decision Support Tool</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            A workflow automation tool for complex decision-making processes. **The Problem:** Teams waste time on repetitive decision workflows and lose track of resolution steps. **My Solution:** A CLI tool that guides users through structured decision trees with automated documentation. **Tech Focus:** Built with Python, emphasizing clean architecture and user experience.
+                            Python CLI tool that streamlines complex decision-making workflows. Eliminates confusion and lost context in team decisions by guiding users through structured decision trees with automated documentation. Perfect for teams that need consistent, traceable decision processes.
                         </div>
                     </div>
                     
@@ -972,7 +1206,7 @@ I help businesses streamline their workflows and extract valuable data from the 
                         </div>
                         <h5 class="card-title bg-transparent mt-1">Professional Portfolio</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            This very site! Built with Hugo and designed to showcase my work professionally. **The Challenge:** Creating a clean, fast-loading portfolio that works perfectly on all devices. **My Approach:** Static site generation with Hugo, deployed on GitHub Pages for reliability and speed. **Result:** A portfolio that loads in under 2 seconds and converts visitors to clients.
+                            Fast-loading, responsive portfolio site built with Hugo static site generator. Designed to showcase work professionally while maintaining sub-2-second load times. Deployed on GitHub Pages for reliability and global CDN performance.
                         </div>
                     </div>
                     
@@ -1020,7 +1254,7 @@ I help businesses streamline their workflows and extract valuable data from the 
                     <div class="text-center pt-3">
                         <a 
                             href='
-                                    mailto:thoni.araujo.dev@gmail.com
+                                    mailto:thonimigueldev@gmail.com
                                   '
                             target="_blank"
                             class="btn"
