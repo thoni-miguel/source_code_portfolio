@@ -23,7 +23,7 @@ jobs:
       - name: Deploy to thoni-miguel.github.io
         uses: peaceiris/actions-gh-pages@v4
         with:
-          deploy_key: ${{ secrets.GH_PAGES_TOKEN }}
+          personal_token: ${{ secrets.GH_PAGES_TOKEN }}
           external_repository: thoni-miguel/thoni-miguel.github.io
           publish_branch: main
           publish_dir: ./public
